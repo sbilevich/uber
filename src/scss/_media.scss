@@ -1,0 +1,239 @@
+@media (max-width: 1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+        &_link {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 50px;
+        }
+    }
+    .advantages {
+        &_descr {
+            width: 300px;
+        }
+        &_item {
+            align-items: flex-start;
+        }
+
+    }
+    .mobile{
+        &_item {
+            width: 300px;
+        }
+    }
+    .footer{
+        .colorder_1 {
+            order: 1;
+        }
+        .colorder_2 {
+            order: 2;
+        }
+        &_social_media {
+            padding: 15px 0 0 0;
+        }
+        &_store {
+            text-align: center;
+            padding: 15px 0 0 0;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .menu {
+        &_item {
+            padding-right: 8px;
+        }
+        &_link {
+            font-size: 10px;
+        }
+    }
+    .subheader {
+        &_logo{
+            img {
+                width: 100%;
+            }
+        }
+        &_oficial {
+            font-size: 11px;
+        }
+        &_phone {
+            font-size: 18px;
+        }
+        &_btn {
+            margin-top: 21px;
+            width: 100%;
+            height: 40px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 40px;
+        }
+        &_subheader {
+            font-size: 30px;
+        }
+    } 
+    .advantages {
+        &_descr {
+            width: 300px;
+            margin-top: 20px;
+        }
+        &_item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_round {
+            margin: 0;
+        }
+    }
+    .mobile{
+        &_item {
+            width: 228px;
+        }
+    }
+    .choise {
+        &_car {
+            img {
+                width: 100%;
+            }    
+        }
+    }    
+}
+@media (max-width: 767px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top:0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba($color: #000000, $alpha: .8);
+        transition: 0.6s all;
+        &_item {
+            padding-right: 0;
+            border: none;
+            margin: 10px 0;
+        }
+        &_link {
+            font-size: 20px;
+        }
+        &_active {
+            left: 0;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+            }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }   
+            }
+        }
+    }
+    .xs-hidden {
+        display:none;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .subheader {
+        &_phone {
+            display: block;
+            margin-top: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_btn {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+    .promo {
+        &_header {
+            line-height: 40px;;
+        }
+    } 
+}
+@media (max-width: 575px) {
+    .subheader {
+        height: 60px;
+        &_logo {
+            margin-top: 16px;
+        }
+        &_oficial {
+            display: none;
+        }
+        &_phone {
+            font-size: 12px;
+        }
+        &_btn {
+            width: 110px;
+            height: 22px;
+            font-size: 9px;
+        }
+    }
+    .menu {
+        width: 85%;
+        &_item {
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        &_link {
+            display: block;
+        }
+    }
+    .promo {
+        min-height: 14px;
+        padding: 113px 0 35px 0;
+        &_header {
+            font-size: 30px;
+        }
+        &_subheader {
+            font-size: 20px;
+        }
+        &_descr {
+            display: none;
+        }
+    }
+    .require {
+        &_block {
+            width: 100%;
+        }
+    }
+}
